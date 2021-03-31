@@ -57,11 +57,11 @@ export default function MovieList() {
           <PDFViewer
             style={{
               width: "100%",
-              height: "80vh"
+              height: "80vh",
             }}
             children={<PdfDocument data={movieDetails} />}
           />
-          
+
           {/* <BlobProvider document={<PdfDocument data={movieDetails} />}>
             {({ blob, url, loading, error }) => {
               // Do whatever you need with blob here
@@ -78,7 +78,7 @@ export default function MovieList() {
               backgroundColor: "green",
               border: "1px solid #4a4a4a",
               width: "25%",
-              margin: "20px auto"
+              margin: "20px auto",
             }}
           >
             {({ blob, url, loading, error }) =>
