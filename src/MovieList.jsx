@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
 import Axios from "axios";
-import { PDFDownloadLink, PDFViewer, BlobProvider } from "@react-pdf/renderer";
+import React, { useState } from "react";
 import { API_KEY } from "./constants";
 import { PdfDocument } from "./Movie";
-import { Test } from "./test";
 
 const years = [
   { value: "2010", text: "2010" },

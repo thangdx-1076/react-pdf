@@ -1,12 +1,8 @@
-import React from "react";
 import {
-  Page,
-  Text,
-  View,
-  Document,
-  StyleSheet,
-  Image
+  Document, Page,
+  Text
 } from "@react-pdf/renderer";
+import React from "react";
 
 export function Test() {
   return (

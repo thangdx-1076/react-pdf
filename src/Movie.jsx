@@ -1,13 +1,15 @@
-import React from "react";
 import {
-  Page,
-  Text,
-  View,
   Document,
-  StyleSheet,
-  Image
+
+  Image, Page,
+
+
+
+  StyleSheet, Text,
+  View
 } from "@react-pdf/renderer";
 import moment from "moment";
+import React from "react";
 
 const POSTER_PATH = "https://image.tmdb.org/t/p/w154";
 
