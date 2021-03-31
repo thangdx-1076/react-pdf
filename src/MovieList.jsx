@@ -15,7 +15,7 @@ const years = [
   { value: "2016", text: "2016" },
   { value: "2017", text: "2017" },
   { value: "2018", text: "2018" },
-  { value: "2019", text: "2019" }
+  { value: "2019", text: "2019" },
 ];
 
 export default function MovieList() {
@@ -55,19 +55,19 @@ export default function MovieList() {
 
       {show && (
         <React.Fragment>
-          {/* <PDFViewer
-          style={{
-            width:"100%"
-          }}
+          <PDFViewer
+            style={{
+              width: "100%",
+            }}
+            children={<PdfDocument data={movieDetails} />}
+          />
           
-          children={<PdfDocument data={movieDetails} />} /> */}
-              <BlobProvider document={<PdfDocument data={movieDetails} />}>
-      {({ blob, url, loading, error }) => {
-        // Do whatever you need with blob here
-        return <div>There's something going on on the fly</div>
-      }}
-    </BlobProvider>
-
+          {/* <BlobProvider document={<PdfDocument data={movieDetails} />}>
+            {({ blob, url, loading, error }) => {
+              // Do whatever you need with blob here
+              return <div>There's something going on on the fly</div>;
+            }}
+          </BlobProvider> */}
           <PDFDownloadLink
             document={<PdfDocument data={movieDetails} />}
             fileName="movielist.pdf"
@@ -76,7 +76,7 @@ export default function MovieList() {
               padding: "10px",
               color: "#4a4a4a",
               backgroundColor: "#f2f2f2",
-              border: "1px solid #4a4a4a"
+              border: "1px solid #4a4a4a",
             }}
           >
             {({ blob, url, loading, error }) =>
